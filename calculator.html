@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2674.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;div style="margin: 40px 0;"&gt; &lt;div style="border-left: 6px solid #673ab7; padding-left: 15px; margin-bottom: 20px;"&gt; &lt;h2 style="color: #673ab7; font-size: 24px; font-weight: bold; margin: 0;"&gt;➕ 물타기 계산기 (feat. 현명한 추가 매수)&lt;/h2&gt; &lt;/div&gt; &lt;p style="margin-bottom: 15px;"&gt;혹시 현재 주가가 물려있어서 고민이신가요? 무턱대고 추가 매수를 하기보다는 아래 계산기를 활용해 평단가를 정확히 계산하고 현명하게 접근해보세요!&lt;/p&gt; &lt;div style="background-color: #f3e5f5; padding: 20px; border-radius: 8px; border: 1px solid #ce93d8;"&gt; &lt;div style="display: flex; flex-direction: column; gap: 10px;"&gt; &lt;div style="display: flex; justify-content: space-between; align-items: center;"&gt; &lt;label for="avgPrice" style="flex: 1; color: #4a148c;"&gt;매수 평단가:&lt;/label&gt; &lt;input type="number" id="avgPrice" style="flex: 2; padding: 8px; border-radius: 4px; border: 1px solid #ce93d8;"&gt; &lt;/div&gt; &lt;div style="display: flex; justify-content: space-between; align-items: center;"&gt; &lt;label for="avgShares" style="flex: 1; color: #4a148c;"&gt;보유 수량:&lt;/label&gt; &lt;input type="number" id="avgShares" style="flex: 2; padding: 8px; border-radius: 4px; border: 1px solid #ce93d8;"&gt; &lt;/div&gt; &lt;div style="display: flex; justify-content: space-between; align-items: center;"&gt; &lt;label for="addPrice" style="flex: 1; color: #4a148c;"&gt;추가 매수 단가:&lt;/label&gt; &lt;input type="number" id="addPrice" style="flex: 2; padding: 8px; border-radius: 4px; border: 1px solid #ce93d8;"&gt; &lt;/div&gt; &lt;div style="display: flex; justify-content: space-between; align-items: center;"&gt; &lt;label for="addShares" style="flex: 1; color: #4a148c;"&gt;추가 매수 수량:&lt;/label&gt; &lt;input type="number" id="addShares" style="flex: 2; padding: 8px; border-radius: 4px; border: 1px solid #ce93d8;"&gt; &lt;/div&gt; &lt;button onclick="calculateNewPrice()" style="padding: 10px; margin-top: 10px; border: none; border-radius: 4px; background-color: #673ab7; color: white; font-size: 16px; cursor: pointer;"&gt;계산하기&lt;/button&gt; &lt;div style="margin-top: 15px; font-size: 16px; font-weight: bold; color: #4a148c;"&gt; 새로운 평단가: &lt;span id="newAvgPrice" style="color: #d81b60;"&gt;0&lt;/span&gt; 원 &lt;/div&gt; &lt;/div&gt; &lt;script&gt; function calculateNewPrice() { const avgPrice = Number(document.getElementById('avgPrice').value); const avgShares = Number(document.getElementById('avgShares').value); const addPrice = Number(document.getElementById('addPrice').value); const addShares = Number(document.getElementById('addShares').value); if (avgPrice &amp;&amp; avgShares &amp;&amp; addPrice &amp;&amp; addShares) { const newAvgPrice = ((avgPrice * avgShares) + (addPrice * addShares)) / (avgShares + addShares); document.getElementById('newAvgPrice').innerText = newAvgPrice.toFixed(2); } else { document.getElementById('newAvgPrice').innerText = '값을 모두 입력해주세요.'; } } &lt;/script&gt; &lt;/div&gt; &lt;/div&gt;</span></p>
+</body>
+</html>
